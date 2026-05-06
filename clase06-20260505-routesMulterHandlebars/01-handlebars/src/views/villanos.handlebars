@@ -1,0 +1,17 @@
+<h2>Villanos Page</h2>
+<hr>
+
+{{#if nombre}}
+    <p>Usuario conectado: {{nombre}}</p>
+    <p>correo electronico: <strong>{{email}}</strong></p>
+{{else}}
+    <a href="/">Login</a>
+{{/if}}
+
+<ul>
+    {{#each villanos}}
+        <li>
+            {{name}} - identidad: {{alias}}
+        </li>
+    {{/each}}
+</ul>
